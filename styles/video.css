@@ -113,19 +113,25 @@ p {
   row-gap: 40px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
   .video-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (min-width: 901px) and (max-width: 1300px) {
+@media (min-width: 901px) and (max-width: 1200px) {
   .video-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-@media (min-width: 1301px) {
+@media (min-width: 1201px) {
   .video-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
